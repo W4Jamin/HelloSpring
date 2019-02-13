@@ -8,11 +8,11 @@ import java.util.Set;
 hello spring
  */
 
-@Entity
+@Entity //@Entity annotation defines that a class can be mapped to a table.
 public class Author {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id // 声明此属性为主键
+    @GeneratedValue(strategy = GenerationType.AUTO) // 指定主键的生成策略
     private Long id;
     private String firstName;
     private String lastName;
