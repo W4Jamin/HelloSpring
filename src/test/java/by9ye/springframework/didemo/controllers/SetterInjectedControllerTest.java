@@ -12,7 +12,7 @@ public class SetterInjectedControllerTest {
     @Before
     public void setUp() throws Exception {
         this.setterInjectedController = new SetterInjectedController();
-        this.setterInjectedController.setGreetingService(new GreetingServiceImpl());
+        this.setterInjectedController.setGreetingService(new GreetingServiceImpl()); // runtime error
     }
 
     @Test
